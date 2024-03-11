@@ -1,0 +1,9 @@
+/* This type of file is used to have the common css and to use in when or wherever need */
+
+.bigBlue{
+  color: wheat;
+  background-color: grey;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
