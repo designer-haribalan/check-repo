@@ -17,6 +17,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
+      - name : Install node Modules
+        run: npm install
       - name: Build-the-project  # Fixed indentation and removed spaces around colon
         run: yarn build           # Fixed indentation
       - name: Setup Build        # Fixed indentation
