@@ -13,5 +13,14 @@ jobs:
   build-apps:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - run : tree
+      - uses: actions/checkout@v2 #Run this string on google to understand the meaning of this. It used to specify lika a package to  install, but now we use the action from market
+      - uses : action/setup-node@v2
+        with : 
+          node-version : '14' 
+          run : yarn
+      -name : Build-the-project
+        run : yarn build
+      -name : Setup Build
+        run : echo "Hurray"
+        
+     # - run : tree # is used to perform the execution
